@@ -1,4 +1,5 @@
 .parceiros {
+  overflow: hidden;
   padding: 80px 0px;
 }
 
@@ -51,5 +52,12 @@
 
   .parceiros li:nth-child(odd) {
     border-left: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .parceiros li {
+    padding: 16px;
+    min-width: 70px;
   }
 }

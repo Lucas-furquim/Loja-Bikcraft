@@ -78,3 +78,9 @@
     width: 18px;
   }
 }
+
+@media (max-width: 310px) {
+  .link::after {
+    width: 45% !important;
+  }
+}

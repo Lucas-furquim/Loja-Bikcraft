@@ -1,11 +1,12 @@
+@import "utilidades/tipografia.css";
+@import "utilidades/componentes.css";
+@import "utilidades/cores.css";
+/* utilidade */
 @import "global/global.css";
 @import "global/header.css";
 @import "global/introducao.css";
 @import "global/bicicletas.css";
 @import "global/acessorios.css";
 @import "global/parceiros.css";
-
-/* utilidade */
-@import "utilidades/tipografia.css";
-@import "utilidades/componentes.css";
-@import "utilidades/cores.css";
+@import "global/depoimento.css";
+@import "global/seguros.css";
