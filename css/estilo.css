@@ -3,6 +3,7 @@
 @import "global/introducao.css";
 @import "global/bicicletas.css";
 @import "global/acessorios.css";
+@import "global/parceiros.css";
 
 /* utilidade */
 @import "utilidades/tipografia.css";
