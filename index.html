@@ -8,15 +8,20 @@
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.">
 
   <link rel="stylesheet" href="css/estilo.css">
+
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> -->
   <title>Bikcraft - Bicicletas elétricas</title>
 </head>
 
 <body>
+
   <header class="header-bg">
-    <div class="header">
+    <div class="header container">
       <a href="index.html"><img src="img/bikcraft.svg" alt="logo-bikcraft"></a>
       <nav aria-label="primaria">
-        <ul class="header-menu">
+        <ul class="header-menu c0 font-p-m">
           <li><a href="">Bicicletas</a></li>
           <li><a href="">Seguros</a></li>
           <li><a href="">Contato</a></li>
@@ -26,17 +31,66 @@
   </header>
 
   <main class="introducao-bg">
-    <div class="introducao">
+    <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1>Bicicletas feitas sob medida<span>.</span></h1>
-        <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <a href="./">Escolha a sua</a>
+        <h1 class="font-p-xxl c0">Bicicletas feitas sob medida<span class="p1">.</span></h1>
+        <p class="font-r-l c5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a class="botao" href="./">Escolha a sua</a>
       </div>
       <div>
         <img src="img/fotos/introducao.jpg" alt="bicicleta preta">
       </div>
     </div>
   </main>
+  <article class="bicicletas">
+    <h2 class="font-p-xxl container">nossas bicicletas<span class="p1">.</span></h2>
+    <ul class="bicicletas-lista">
+      <li> <a href="">
+          <img src="img/bicicletas/magic-home.jpg" alt="bicicleta preta">
+          <h3 class="font-p-xl">Magic Might</h3>
+          <span class="font-r-m c8">R$2499</span>
+        </a>
+      </li>
+      <li> <a href="">
+          <img src="img/bicicletas/nimbus-home.jpg" alt="bicicleta preta">
+          <h3 class="font-p-xl">Nimbus Stark</h3>
+          <span class="font-r-m c8">R$3999</span>
+        </a>
+      </li>
+      <li> <a href="">
+          <img src="img/bicicletas/nebula-home.jpg" alt="bicicleta preta">
+          <h3 class="font-p-xl">Nebula Cosmic</h3>
+          <span class="font-r-m c8">R$1999</span>
+        </a>
+      </li>
+    </ul>
+  </article>
+
+  <article class="acessorios-bg">
+    <div class="acessorios container">
+      <div class="acessorios-conteudo">
+        <span class=" c5 font-r-l-b up">Tenologias avançadas</span>
+        <h2 class="c0 font-p-xxl">você escolhe as suas cores e componentes<span class="p1">.</span></h2>
+        <p class="c5 font-r-l">Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.</p>
+        <a class="link" href="">Escolha um modelo</a>
+        <div class="acessorios-info">
+          <div>
+            <img src=" img/icones/eletrica.svg" alt="">
+            <h3 class="c0 font-p-m">Motor Elétrico</h3>
+            <p class="c5 font-r-s">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
+          </div>
+          <div>
+            <img src="img/icones/rastreador.svg" alt="">
+            <h3 class="c1 font-p-m">Rastreador</h3>
+            <p class="c5 font-r-s">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
+          </div>
+        </div>
+      </div>
+      <div class="acessorio-img">
+        <img src="img/fotos/tecnologia.jpg" alt="">
+      </div>
+    </div>
+  </article>
 </body>
 
 </html>
