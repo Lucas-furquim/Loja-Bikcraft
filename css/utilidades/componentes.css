@@ -57,6 +57,21 @@
   color: var(--c2);
 }
 
+.seta::after {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 18px;
+  margin-left: 10px;
+  margin-bottom: 1px;
+  background-image: url("../../img/icones/seta.svg");
+  transition: 0.3s;
+}
+
+.seta:hover::after {
+  margin-left: 20px;
+}
+
 .titulo-bg {
   background-color: var(--c11);
 }
