@@ -33,6 +33,7 @@
 .det {
   border-bottom: 2px solid var(--c11);
   max-width: 360px;
+  word-break: break-all;
 }
 
 .rodape-icone {
