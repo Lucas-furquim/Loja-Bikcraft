@@ -1,0 +1,52 @@
+.nimbus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.nimbus-conteudo > p {
+  padding-bottom: 20px;
+}
+
+.nimbus-extra {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+}
+
+.nimbus-span > div + div {
+  margin-top: 5px;
+}
+
+.nimbus-span > div > img {
+  width: 14px;
+  height: 100%;
+}
+
+.nimbus-span > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  max-width: max-content;
+  border-radius: 5px;
+  padding: 4px 8px;
+  background-color: var(--c12);
+}
+
+.nimbus-span span {
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.nimbus-span img {
+  display: inline-block;
+}
+
+.nimbus-lista {
+  margin-top: 40px;
+}
+
+.nimbus-lista ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
