@@ -115,7 +115,6 @@
 }
 
 .pedale-conteudo {
-  grid-column: 2;
   padding: 60px 0px;
 }
 
@@ -197,10 +196,16 @@
   }
 
   .pedale {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pedale-conteudo {
+    grid-column: 1/-1;
+    grid-row: 1;
   }
 
   .pedale-img {
+    grid-column: 1/-1;
     grid-row: 2;
   }
 }
