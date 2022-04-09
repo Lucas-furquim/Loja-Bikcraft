@@ -14,6 +14,10 @@
   grid-column: 1/-1;
 }
 
+.bicicletas h2 {
+  padding: 40px 0px 10px 20px;
+  margin: 0px;
+}
 .nimbus {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -184,11 +188,20 @@
   .nimbus-pag {
     padding: 40px 20px 20px 20px;
   }
+
+  .bicicletas h2 {
+    padding: 40px 0px 10px 0px;
+    margin: 0px;
+  }
 }
 
 @media (max-width: 500px) {
   .nimbus-lista .nimbus-info {
     grid-template-columns: 1fr;
+  }
+
+  .pedale-bg {
+    box-shadow: inset 0px -40px var(--c12);
   }
 
   .nimbus-extra {
@@ -202,6 +215,15 @@
   .pedale-conteudo {
     grid-column: 1/-1;
     grid-row: 1;
+    padding: 0px;
+  }
+
+  .pedale-conteudo h2 {
+    padding: 40px 0px 0px 0px;
+  }
+
+  .pedale-conteudo p {
+    padding: 10px 0px;
   }
 
   .pedale-img {
