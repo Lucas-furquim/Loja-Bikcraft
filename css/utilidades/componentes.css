@@ -77,7 +77,7 @@
 }
 
 .titulo {
-  padding: 60px 0px 40px 0px;
+  padding: 60px 0px 80px 32px;
 }
 
 .padding-alinha {
@@ -86,7 +86,7 @@
 
 @media (max-width: 1200px) {
   .titulo {
-    padding-left: 20px;
+    padding-left: 32px;
   }
 }
 

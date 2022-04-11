@@ -1,0 +1,43 @@
+.contato-bg {
+  background-image: linear-gradient(to bottom, var(--c11) 50%, var(--c0) 0%);
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  padding: 0px 40px;
+}
+
+.contato-conteudo {
+  background-color: var(--c12);
+  padding: 40px 60px;
+  border-radius: 5px;
+}
+
+.contato-conteudo h3 {
+  padding-bottom: 40px;
+}
+
+.contato-conteudo > div + div {
+  padding-top: 20px;
+}
+
+.contato-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+}
+
+.contato-info p {
+  grid-column: 2;
+}
+
+.contato-info {
+  grid-row: 1/-1;
+}
+
+.fomulario-conteudo {
+  background-color: var(--c0);
+  padding: 40px 20px;
+  border-radius: 5px;
+}
