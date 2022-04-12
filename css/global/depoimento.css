@@ -20,6 +20,8 @@
 .depoimento-conteudo {
   padding: 40px 40px 80px 80px;
   align-self: end;
+  background: url("../../img/dec/bottom-right-p.svg") no-repeat bottom 80px left
+    500px;
 }
 
 .depoimento-conteudo p {
@@ -50,6 +52,12 @@
 .depoimento span {
   /* display: block; */
   text-align: end;
+}
+
+@media (min-width: 600px) {
+  .depoimento img {
+    max-height: 520px;
+  }
 }
 
 @media (max-width: 600px) {

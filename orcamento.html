@@ -55,11 +55,67 @@
           <input type="radio" name="tipo" value="nimbus" id="nimbus">
           <label for="nimbus">Nimbus Stark <span>R$ 3999</span></label>
 
+          <div class="orcamento-detalhes">
+            <ul>
+              <li>
+                <img src="img/icones/eletrica.svg" alt="">Motor Elétrico
+              </li>
+              <li>
+                <img src="img/icones/carbono.svg" alt="">Carbono
+              </li>
+              <li>
+                <img src="img/icones/velocidade.svg" alt="">50km/h
+              </li>
+              <li>
+                <img src="img/icones/rastreador.svg" alt="">Rastreador
+              </li>
+            </ul>
+            <img src="img/bicicletas/nimbus.jpg" alt="Bicicleta preta">
+          </div>
+
           <input type="radio" name="tipo" value="Magic" id="Magic">
           <label for="Magic">Magic Might <span>R$ 2499</span></label>
 
+
+          <div class="orcamento-detalhes">
+            <ul>
+              <li>
+                <img src="img/icones/eletrica.svg" alt="">Motor Elétrico
+              </li>
+              <li>
+                <img src="img/icones/carbono.svg" alt="">Carbono
+              </li>
+              <li>
+                <img src="img/icones/velocidade.svg" alt="">45km/h
+              </li>
+              <li>
+                <img src="img/icones/rastreador.svg" alt="">Rastreador
+              </li>
+            </ul>
+            <img src="img/bicicletas/magic.jpg" alt="Bicicleta preta">
+          </div>
+
           <input type="radio" name="tipo" value="nebula" id="nebula">
           <label for="nebula">Nebula Cosmic <span>R$ 1999</span></label>
+
+
+          <div class="orcamento-detalhes">
+            <ul>
+              <li>
+                <img src="img/icones/eletrica.svg" alt="">Motor Elétrico
+              </li>
+              <li>
+                <img src="img/icones/carbono.svg" alt="">Carbono
+              </li>
+              <li>
+                <img src="img/icones/velocidade.svg" alt="">40km/h
+              </li>
+              <li>
+                <img src="img/icones/rastreador.svg" alt="">Rastreador
+              </li>
+            </ul>
+            <img src="img/bicicletas/nebula.jpg" alt="Bicicleta preta">
+          </div>
         </div>
 
         <div class="orcamento-conteudo" id="orcamento-seguro">
@@ -82,7 +138,7 @@
           <input type="text" id="nome1" name="nome1">
         </div>
 
-        <div>
+        <div class="sobrenome">
           <label for="sobrenome">Sobrenome</label>
           <input type="text" id="sobrenome" name="sobrenome">
         </div>
@@ -111,7 +167,7 @@
 
         <div>
           <label for="logradouro">Logradouro</label>
-          <input type="text" id="logradouro" name="logradouro">
+          <input type="text" id="logradouro" name="logradouro" placeholder="Rua, Av, Travessia, Etc..">
         </div>
 
         <div>
@@ -124,9 +180,18 @@
           <input type="text" id="codade" name="codade">
         </div>
 
-        <div>
-          <label for="estado">Estado</label>
-          <input type="text" id="estado" name="estado">
+        <div class="estados">
+          <label for="estado">Estados</label>
+          <select name="estado" id="estado">
+            <option value="1x">SP</option>
+            <option value="2x">RJ</option>
+
+          </select>
+        </div>
+
+        <div class="te">
+          <input type="checkbox" id="termos" name="termos" value="Aceito">
+          <label for="termos">Aceito os <a href="termos.html">termos e condições</a></label>
         </div>
 
         <button class="botao">Solicitar orçamento</button>

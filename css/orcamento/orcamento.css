@@ -45,11 +45,6 @@ label {
   background-color: var(--c9);
 }
 
-.orcamento-produto input:focus + label {
-  box-shadow: 0 0 0 2px var(--p1);
-  border: var(--c12);
-}
-
 .orcamento-produto label {
   font: 400 1rem/1.5 "Poppins", sans-serif;
   color: var(--c4);
@@ -63,10 +58,15 @@ label {
   align-items: center;
   border: 1px solid var(--c12);
 }
+.orcamento-produto input:focus + label {
+  box-shadow: 0 0 0 2px var(--p1);
+  border: var(--c12);
+}
 
 .orcamento-produto input:checked + label {
   background-color: var(--c0);
   color: var(--c11);
+  border: var(--p1);
 }
 
 .orcamento-produto label::before {
@@ -99,9 +99,9 @@ label {
   pointer-events: none;
 }
 
-/* .orcamento-conteudo {
+.orcamento-conteudo {
   display: none;
-} */
+}
 
 #bikcraft:checked ~ #orcamento-bikcraft,
 #seguro:checked ~ #orcamento-seguro {
@@ -143,6 +143,20 @@ label {
   box-sizing: border-box;
 }
 
+select {
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.estados {
+  display: grid;
+}
+
+.te a {
+  color: var(--p1);
+  text-decoration: underline;
+}
+
 .cpf {
   grid-column: 1/-1;
 }
@@ -153,4 +167,102 @@ label {
 
 button {
   grid-column: 1/-1;
+}
+
+.orcamento-detalhes {
+  display: none;
+  background-color: var(--c0);
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 0px 0px 5px 5px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.orcamento-detalhes li {
+  display: flex;
+  align-items: center;
+}
+
+.orcamento-detalhes li + li {
+  margin-top: 10px;
+}
+.orcamento-detalhes li img {
+  width: 20px;
+  padding-right: 8px;
+}
+
+.orcamento-produto input:checked + label + .orcamento-detalhes {
+  display: grid;
+}
+
+.te label {
+  margin: 0px;
+  display: inline;
+}
+
+.te input {
+  margin: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+.te {
+  margin: 30px 0px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .orcamento-produto,
+  .orcamento-dados {
+    padding: 32px;
+  }
+  .orcamento-dados h2 {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .orcamento {
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
+  }
+
+  .orcamento-dados div {
+    grid-column: 1/-1;
+  }
+  .container {
+    padding: 0px;
+  }
+
+  .orcamento-produto {
+    padding: 14px;
+  }
+
+  .orcamento-detalhes ul {
+    grid-column: 1/-1;
+  }
+
+  .orcamento-detalhes img {
+    grid-column: 1/-1;
+    width: 100%;
+  }
+
+  .titulo {
+    padding: 10px;
+  }
+
+  .rodape {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .orcamento-produto {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
 }

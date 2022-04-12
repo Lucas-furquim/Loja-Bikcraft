@@ -1,6 +1,7 @@
 .introducao-bg {
   padding-top: 40px;
-  background-color: var(--c12);
+  background: var(--c12) url("../../img/dec/bottom-right.svg") no-repeat bottom
+    200px left 500px;
   box-shadow: inset 0px -120px 0 var(--c0);
 }
 
@@ -28,6 +29,7 @@
 .introducao p {
   margin-bottom: 20px;
 }
+
 @media (max-width: 800px) {
   .introducao-bg {
     background: var(--c11);
