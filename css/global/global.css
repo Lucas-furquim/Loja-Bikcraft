@@ -32,3 +32,8 @@ img {
 img[src$=".jpg"] {
   border-radius: 5px;
 }
+
+label {
+  font-size: 1.125rem;
+  font-family: "Poppins", sans-serif;
+}
