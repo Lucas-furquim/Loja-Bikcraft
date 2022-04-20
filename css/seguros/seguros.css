@@ -78,11 +78,11 @@
   height: 12px;
 }
 
-.perguntas dd {
+.js .perguntas dd {
   display: none;
 }
 
-.perguntas dd.ativo {
+.js .perguntas dd.ativo {
   padding-top: 10px;
   padding-left: 24px;
   max-width: 90ch;
