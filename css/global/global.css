@@ -37,3 +37,17 @@ label {
   font-size: 1.125rem;
   font-family: "Poppins", sans-serif;
 }
+
+/* plugins  */
+.fadeInUp {
+  transform: translate3d(0, -40px, 0);
+}
+
+[data-anime] {
+  opacity: 0;
+}
+.anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}

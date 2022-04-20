@@ -32,18 +32,22 @@
 }
 
 .perguntas dl > div:nth-child(odd) {
-  background-color: var(--c1);
+  background-color: var(--c2);
 }
 
-.perguntas dt {
+.perguntas button {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
+  justify-items: start;
   gap: 10px;
   cursor: pointer;
+  border: none;
+  background-color: inherit;
+  width: 100%;
 }
 
-.perguntas dt::before {
+.perguntas button::before {
   content: "";
   width: 12px;
   height: 8px;
@@ -52,11 +56,11 @@
   transition: 0.3s;
 }
 
-.perguntas dt:hover::before {
+.perguntas button:hover::before {
   width: 20px;
 }
 
-.perguntas dt::after {
+.perguntas button::after {
   content: "";
   width: 14px;
   height: 6px;
@@ -66,14 +70,23 @@
   transition: 0.3s;
 }
 
-.perguntas dt:hover::after {
+.perguntas button[aria-expanded="true"]::after {
+  transform: rotate(0deg);
+}
+
+.perguntas button:hover::after {
   height: 12px;
 }
 
 .perguntas dd {
+  display: none;
+}
+
+.perguntas dd.ativo {
   padding-top: 10px;
   padding-left: 24px;
   max-width: 90ch;
+  display: block;
 }
 
 @media (max-width: 800px) {

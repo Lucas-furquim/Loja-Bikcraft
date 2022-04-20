@@ -2,7 +2,7 @@
   padding-top: 40px;
   background: var(--c12) url("../../img/dec/bottom-right.svg") no-repeat bottom
     200px left 500px;
-  box-shadow: inset 0px -120px 0 var(--c0);
+  box-shadow: inset 0px -120px 0 var(--c1);
 }
 
 .introducao {
