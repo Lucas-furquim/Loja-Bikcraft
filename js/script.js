@@ -67,6 +67,41 @@ function mudaFoto(event) {
 
 galeria.forEach(muda);
 
+// formulario
+
+const formulario = document.querySelector("form");
+
+function formularioEnviado(resposta) {
+  if (resposta.ok) {
+    formulario.innerHTML =
+      "<h1 class'font-r-m' style='grid-column:1/-1; background: #f7f7f7;'>Mensagem enviada com sucesso</h1>";
+  } else {
+    formulario.innerHTML =
+      "<h1 class'font-r-m' style='background: #e7e7e7; grid-column: 1/-1; padding: 10px; border-radius: 5px;'>Formulario <span style='color: red;'>não enviado</span> tente novamente</h1>";
+  }
+}
+
+function ativaform(event) {
+  event.preventDefault();
+  const botao = document.querySelector("form button");
+  botao.disabled = true;
+  botao.innerText = "enviando...";
+  console.log("desativou");
+
+  const data = new FormData(formulario);
+  console.log(data.get("nome"));
+  console.log(data.get("telefone"));
+
+  fetch("./enviar-teste.php", {
+    method: "POST",
+    body: data,
+  }).then(formularioEnviado);
+}
+
+if (formulario) {
+  formulario.addEventListener("submit", ativaform);
+}
+
 // animação
 
 if (window.SimpleAnime) {
